@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academlo Store</title>
+
+  <link rel="shortcut icon" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+  <!-- LOADER  -->
+  <section id="preloader" class="preloader fadeout">
+    <svg class="preloader-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48">
+      <title>Academlo Logo</title>
+      <g>
+        <g>
+          <path
+            d="M24.45,56.48,0,42.36V14.12L24.46,0,48.92,14.12V42.36ZM1.89,41.26l22.56,13L47,41.26v-26l-22.56-13-22.56,13Z">
+          </path>
+          <path
+            d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+          </path>
+        </g>
+      </g>
+    </svg>
+  </section>
+
+  <header>
+    <nav class="nav">
+      <a class="nav-icon" href="#">
+        <svg class="nav-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48">
+          <title>Academlo Logo</title>
+          <g>
+            <g>
+              <path
+                d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+              </path>
+            </g>
+          </g>
+        </svg>STORE
+      </a>
+      <!-- nav -->
+      <div id="nav-menu" class="nav__menu">
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#products">Products</a></li>
+        </ul>
+        <div class="nav__close" id="nav-close">
+          <i class="bx bx-x"></i>
+        </div>
+      </div>
+      
+      <div class="nav-btns">
+        <i class="bx bx-moon change-theme" id="theme-button"></i>
+
+        <div class="nav__shop" id="btn-cart-shop">
+          <i class="bx bx-shopping-bag"></i>
+          <span id="cart-count" class="count">0</span>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- SHOP -->
+  <section id="shop" class="shop">
+    <i class="bx bx-x cart__close" id="cart-close"></i>
+    <h2 class="shop-title">My Cart</h2>
+    <div id="shop-container" class="shop-container">
+      <div class="empty-cart">
+        <img src="./assets/images/empty-cart.png" alt="">
+        <h2 class="shop-title">Your cart is empty</h2>
+        <p>You can add items to your cart by clicking on the "" button on the product page.</p>
+      </div>
+    </div>
+    <div class="shop-resume">
+      <p class="shop-resume__items">
+        <span class="shop-resume__number">0</span>
+        Items
+      </p>
+      <h3 class="shop-resume__total">S/ 0.00</h3>
+    </div>
+    <div class="shop__btn-container">
+      <button id="cart-checkout" class="shop__btn">
+        <i class="bx bxs-check-shield"></i>
+        Checkout
+      </button>
+    </div>
+  </section>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <article class="coverpage">
+
+      <div class="coverpage__img">
+        <img src="./assets/images/home.png" alt="">
+      </div>
+
+      <div class="coverpage__left">
+        <h1 class="coverpage_title">New Sweatshirt <br>COLLECTIONS 2022</h1>
+        <p>
+          Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, with a modern
+          design.
+        </p>
+        <span class="home__price">S/ 14.00</span>
+        <div class="coverpage__btns">
+          <a href="#" class="button button--gray button--small">
+            Discover
+          </a>
+          <button class="button">ADD TO CART</button>
+        </div>
+      </div>
+
+    </article>
+
+    <article id="products" class="article-list">
+      <div class="article-selector">
+        <ul class="article-selector__list">
+          <li name="cat-1" class="article-selector__item">
+            <h3 class="article-selector__item__title">Show All</h3>
+            <span class="article-selector__item__description">Show all products</span>
+          </li>
+        </ul>
+      </div>
+      <div class="article-cards"></div>
+
+    </article>
+    <section class="products__content grid" id="products__content">
+
+      <article class="products__card hoodies">
+        <div class="products__shape">
+          <img src="assets/images/featured1.png" alt="Hoodies" class="products__img">
+        </div>
+        <div class="products__data">
+          <h2 class="products__price">$14.00 <span class="products__quantity">| Stock: 0</span></h2>
+          <h3 class="products__name">Hoodies</h3>
+
+          <button class="button products__button" data-id="1">
+            <i class="bx bx-plus"></i>
+          </button>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer class="footer section">
+
+    <div class="footer-container">
+      <section class="footer__our-info">
+        <h3 class="footer-title">Our Information</h3>
+        <ul class="footer__list">
+          <li>Toluca - Mexico</li>
+        </ul>
+      </section>
+      <section class="footer__about">
+        <h3 class="footer-title">About Us</h3>
+        <ul class="footer__list">
+          <li>Support Center</li>
+          <li>Customer Support</li>
+          <li>About Us</li>
+          <li>Copy Right</li>
+        </ul>
+      </section>
+      <section class="footer__product">
+        <h3 class="footer-title">Product</h3>
+        <ul class="footer__list">
+          <li>hoodies</li>
+          <li>Shirts</li>
+          <li>Sweatshirts</li>
+        </ul>
+      </section>
+      <section class="">
+        <h3 class="footer-title">Social</h3>
+        <ul class="footer__social">
+          <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+            <i class="bx bxl-facebook"></i>
+          </a>
+
+          <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+            <i class="bx bxl-twitter"></i>
+          </a>
+
+          <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+            <i class="bx bxl-instagram"></i>
+          </a>
+        </ul>
+      </section>
+    </div>
+
+  </footer>
+  <script src="./assets/js/main.js" type="module"></script>
+</body>
+
+</html>
